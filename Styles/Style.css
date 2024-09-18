@@ -1,308 +1,494 @@
-*{
-   font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-   background-color:#F4F7FB;
-   margin:0px;
-   font-size:14px;
+* {
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	background-color: #F4F7FB;
+	margin: 0px;
+	font-size: 14px;
 }
 
-body{
-  overflow-x:hidden;
-  overflow-y:hidden;
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
-.screenDivsion{
-  display:flex;
+
+.screenDivsion {
+	display: flex;
 
 }
 
 /* Header Navigation Bar */
 
-.gmailHeader{
-  display:flex;
-  margin-left:1vw;
-  margin-right:1vw;
-  align-items:center;
-  justify-content:space-between;
-}
-.toggleButtonDiv{
-  background-color:#e6eeff;
-}
-.toggleButton{
-  background-color:#e6eeff;
-}
-.toggleLogo{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-.gmailLogo{
-  margin-left:4vw;
-}
-.SearchBarDiv{
-  display:flex;
-  margin-left:8vw;
-  width:43vw;
-  align-items:center;
-  justify-content:space-evenly;
-  background-color:#e6eeff;
-  height:45px;
-  border-radius:20px;
-}
-.searchBar{
-  width:36vw;
-  border:transparent;
-  background-color:#e6eeff;
-}
-.searchBar:focus{
-  outline:none;
+.gmailHeader {
+	display: flex;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-top: 0.2vw;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.activeInfoSettings{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  margin-left:2vw;
+.toggleLogo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-.activeListDiv{
-  display:flex;
-  align-items:center;
-  justify-content:space-evenly;
-  background-color:#e6eeff;
-  height:45px;
-  border-radius:20px;
-  width:8vw;
+
+.gmailLogo {
+	margin-left: 0.6vw;
 }
-.greenRound{
-  color:#00b33c;
-  font-size:30px;
-  background-color:#e6eeff;
+
+.SearchBarDiv {
+	display: flex;
+	margin-left: 10vw;
+	width: 44vw;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #e6eeff;
+	height: 50px;
+	border-radius: 30px;
 }
-.activeSent{
-  background-color:#e6eeff;
+
+.searchOptionsDiv {
+	background-color: #e6eeff;
 }
-.infoButton{
-  margin-left:2vw;
+
+.searchBar {
+	width: 36vw;
+	border: transparent;
+	background-color: #e6eeff;
 }
-.settingsButton{
-  margin-left:2vw;
+
+.searchBar:focus {
+	outline: none;
 }
-.userNavDiv{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+
+.activeInfoSettings {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 2vw;
+}
+
+.activeListDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #e6eeff;
+	height: 45px;
+	border-radius: 20px;
+	width: 7vw;
+}
+
+.greenRound {
+	color: #008000;
+	font-size: 28px;
+	background-color: #e6eeff;
+}
+
+.activeSent {
+	background-color: #e6eeff;
+	text-shadow: 1px black;
+}
+
+.infoButton {
+	margin-left: 1.6vw;
+}
+
+.contentsButton {
+	margin-left: 1.6vw;
+}
+
+.settingsButton {
+	margin-left: 1.6vw;
+}
+
+.userNavDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
 }
 
 /* Main Content */
-.mainContent{
-  margin:0px;
+.mainContent {
+	margin: 0px;
 }
+
 /* Side Navigation Bar */
-.sideNavBar{
-  height:90vh;
-  width:4vw;
-  background-color:#ecf0f8;
-  padding-left:1vw;
+
+.toggleButtonDiv {
+	background-color: #e6eeff;
+	margin: 25px 10px 0px 10px;
+	paddding: 12px;
 }
-.sideNavComponent1{
-  cursor:pointer;
-  background-color:#e6eeff;
+
+.toggleButton {
+	background-color: #e6eeff;
+	margin-left: 1vw;
 }
-.sideNavComponent2{
-  cursor:pointer;
-  background-color:#e6eeff;
-  margin-top:20px;
+
+.sideNavBar {
+	height: 90vh;
+	width: 4vw;
+	background-color: #ecf0f8;
+	padding-right: 1vw;
 }
-.sideNavComponent3{
-  cursor:pointer;
-  background-color:#e6eeff;
-  margin-top:20px;
+
+.sideNavComponent1 {
+	cursor: pointer;
+	background-color: #e6eeff;
+	margin-top: 35px;
+	margin-left: 1vw;
 }
-.sideNavInnDiv1{
-  background-color:#e6eeff;
-  margin-left:3px;
+
+.sideNavComponent2 {
+	cursor: pointer;
+	background-color: #e6eeff;
+	margin-top: 30px;
+	margin-left: 1vw;
 }
-.mailIndicator{
-  background-color:#e6eeff;
+
+.sideNavComponent3 {
+	cursor: pointer;
+	background-color: #e6eeff;
+	margin-top: 30px;
+	margin-left: 1vw;
 }
-.sideNavInnDiv2{
-  background-color:#e6eeff;
-  margin-left:3px;
+
+.sideNavInnDiv1 {
+	background-color: #ccdcff;
+	padding: 10px 16px 10px 16px;
+	border-radius: 30px;
+	position: absolute;
+
 }
-.sideNavCompName{
-   background-color:#e6eeff;
+
+.emailEnvolopeIcon {
+	background-color: #ccdcff;
+}
+
+.mailIndicator {
+	background-color: #990000;
+	position: relative;
+	margin-left: 1.8vw;
+	padding: 0.1vw 0.3vw 0.1vw 0.3vw;
+	border-radius: 14px;
+	border: 1px solid #e6eeff;
+	;
+	color: white;
+	font-size: 11px;
+	font-weight: 800;
+}
+
+.sideNavInnDiv2 {
+	background-color: #e6eeff;
+	margin-left: 10px;
+}
+
+.sideNavCompName {
+	background-color: #e6eeff;
+	font-size: 12px;
+	margin-left: 8px;
+	color: #54565f;
+}
+
+.sideNavCompName1 {
+	background-color: #e6eeff;
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 1vw;
+	color: #54565f;
 }
 
 /* Catagories Divison */
 
-.catagoriesDiv{
-  margin-left:1vw;
-}
-.composeDiv{
-  padding:1vw;
-  background-color:#b3e6ff;
-  border-radius:10px;
-  display:flex;
-  justify-content:space-between;
-  width:7vw;
-  cursor:pointer;
-}
-.composeDiv:hover{
-  box-shadow:2px 2px 2px  grey;
-}
-.penIcon{
-  background-color:#b3e6ff;
-}
-.composeSpan{
-  background-color:#b3e6ff;
-}
-.inboxInnerDiv{
-  background-color: #ccdcff;
-  padding: 10px 12px 10px 12px;
-  width:13vw;
-  margin-top:15px;
-  border-radius:20px;
-  cursor:pointer;
+.catagoriesDiv {
+	margin-left: 1vw;
+	margin-top: 10px;
 }
 
-.catagoriesInnerDiv{
-  margin-top:20px;
-  padding: 10px 12px 10px 12px;
-  width:13vw;
-  cursor:pointer;
-  margin-top:1px;
-}
-.catagoriesInnerDiv:hover{
-  background-color:#e6e6e6;
-  padding: 10px 12px 10px 12px;
-  width:13vw;
-  border-radius:20px;
-}
-.inboxIcon{
-  color:black;
-  background-color: #ccdcff;
-}
-.componentsIcon{
- color:black;
-}
-.inboxSpan{
-  background-color: #ccdcff;
-  margin-left:15px;
-  font-weight:600;
-}
-.inboxBadge{
-  background-color: #ccdcff;
-  margin-left:6vw;
-  font-size:11px;
-  font-weight:600;
-}
-.catagoriesSpan{
-  margin-left:15px;
-  color:#54565f;
-}
-.catagoriesSpan:hover{
-  background-color:#e6e6e6;
-}
-.labelSpan{
- margin-left:10px;
- margin-top:25px;
- color:#54565f;
-
-}
-.labelDiv{
- display:flex;
- justify-content:space-between;
- cursor:pointer;
-}
-.labelIcon{
- color:black;
- margin-top:25px;
+.composeDiv {
+	padding: 1vw 1vw 1vw 1vw;
+	background-color: #b3e6ff;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	width: 8vw;
+	height: 2vw;
+	cursor: pointer;
 }
 
+.composeDiv:hover {
+	box-shadow: 2px 2px 2px grey;
+}
 
-.mailsectionMainDiv{
-  display:flex;
+.penIcon {
+	background-color: #b3e6ff;
+	margin-top: 6px;
+	font-size: 20px;
+}
+
+.composeSpan {
+	background-color: #b3e6ff;
+	margin-top: 8px;
+	margin-right: 6px;
+	color: #001D35;
+	text-shadow: 1px #001D35;
+}
+
+.inboxInnerDiv {
+	background-color: #ccdcff;
+	padding: 8px 12px 8px 12px;
+	width: 15vw;
+	margin-top: 15px;
+	border-radius: 20px;
+	cursor: pointer;
+        display:flex;
+}
+
+.catagoriesInnerDiv {
+	margin-top: 20px;
+	padding: 10px 12px 10px 12px;
+	width: 15vw;
+	cursor: pointer;
+	margin-top: 1px;
+}
+
+.catagoriesInnerDiv:hover {
+	background-color: #e6e6e6;
+	padding: 10px 12px 10px 12px;
+	width: 15vw;
+	border-radius: 20px;
+}
+
+.catagoriesInnerDiv:hover>.catagoriesSpan {
+	background-color: #e6e6e6;
+}
+
+.inboxIcon {
+	color: black;
+	background-color: #ccdcff;
+}
+
+.componentsIcon {
+	color: black;
+}
+
+.inboxSpan {
+	background-color: #ccdcff;
+	margin-left: 15px;
+	font-weight: 600;
+}
+
+.inboxBadge {
+	background-color: #ccdcff;
+	margin-left: auto;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.catagoriesSpan {
+	margin-left: 15px;
+	color: #54565f;
+}
+
+.labelSpan {
+	margin-left: 10px;
+	margin-top: 25px;
+	color: #54565f;
+
+}
+
+.labelDiv {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.labelIcon {
+	color: black;
+	margin-top: 25px;
+}
+
+
+.mailsectionMainDiv {
+	display: flex;
 }
 
 /* Mails Divison */
 
-.mailSectionDiv{
-  margin-left:45px;
-  width:100%;
+.mailSectionDiv {
+	margin-left: 1.8vw;
+	width: 100%;
 }
-.mailSectionHeader{
- width:93%;
- padding:20px 20px 20px 20px;
- background-color:white;
- display:flex;
- justify-content:space-between;
- border-radius:20px 20px 0px 0px;
- color:#54565f;
+
+.mailSectionHeader {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 20px 20px 0px 0px;
+	padding: 5px 8px 5px 0px;
+	color: #54565f;
 }
-.mailSectionFlex1{
- background-color:white;
- display:flex;
+
+.mailHeaderDropdown{
+	background-color: white;
 }
-.mailSectionFlex2{
- background-color:white;
- display:flex;
+
+.mailSectionFlex1 {
+	background-color: white;
+	display: flex;
 }
-.mailFlex1iconDiv{
- background-color:white;
+
+.mailSectionFlex2 {
+	background-color: white;
+	display: flex;
 }
-.mailFlex1icon{
- background-color:white;
- margin-left:3vw;
+
+.mailFlex1iconDiv {
+	background-color: white;
+	padding: 10px 5px 10px 5px;
+        border-radius:6px;
+        margin-left:15px;
 }
-.mailTotNumber{
-  margin-right:35px;
- background-color:white;
+
+.mailFlex1icon2Div {
+	background-color: white;
+	margin-left: 2px;
+	padding: 10px 2px 10px 2px;
+        border-radius:2px;
 }
-.mailFlex2icon{
-  margin-right:30px;
+
+.mailFlex1icon {
+	background-color: white;
+	margin-left: 1vw;
+        padding:10px;
+        border-radius:20px;
 }
-.mailFlex2Div1{
-  margin-right:20px;
-  background-color:white;
+
+.mailFlex1iconDiv:hover {
+	background-color: #d6d7db;
+	cursor: pointer;
+	transition-duration:1s;
 }
-.mailFlex2Div2{
-  background-color:white;
+
+.mailFlex1icon2Div:hover {
+	background-color: #d6d7db;
+	cursor: pointer;
+	transition-duration:1s;
+}
+
+.mailFlex1icon:hover {
+	background-color: #d6d7db;
+	cursor: pointer;
+	transition-duration:700ms;
+       
+}
+
+.mailTotNumber {
+	margin-right: 35px;
+	background-color: white;
+	font-size: 12px;
+        padding:10px 10px 10px 10px;
+        border-radius:6px;
+}
+.mailTotNumber:hover {
+	background-color: #d6d7db;
+	cursor:pointer;
+}
+
+.mailFlex2icon {
+	margin-right: 15px;
+}
+
+.mailFlex2Div1 {
+	margin-right: 20px;
+	background-color: white;
+        margin-top:10px;
+}
+
+.mailFlex2Div2 {
+	background-color: white;
+	margin-right: 40px;
+        padding:10px ;
+}
+
+.mailFlex2Div2:hover {
+	background-color: #d6d7db;
+        border-radius:8px;
+	transition-duration:700ms;
 }
 
 
-
-.eachmailDivision{
- height:60vh;
- overflow-x:hidden;
- overflow-y:scroll;
+.eachmailDivision {
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
-.eachMailDivMain{
-  width:97%;
-  height:80vh;
-  overflow-x:hidden;
-  overflow-y:scroll;
+.eachMailDivMain {
+	width: 100%;
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
-.eachMailDiv{
-  display:flex;
-  width:93%;
-  justify-content:space-between;
-  padding: 15px 0px 15px 20px;
-  border-bottom:1px solid #d6d7db;
-  cursor:pointer;
+
+.eachMailDiv {
+	display: flex;
+	width: 98%;
+	justify-content: space-between;
+	padding: 12px 0px 12px 20px;
+	border-bottom: 1px solid #d6d7db;
+	cursor: pointer;
 }
-.eachMailDiv:hover{
-  box-shadow:0px 1px 0px 1px grey;
+
+.eachMailDiv:hover {
+	border-right: 1px solid #d6d7db;
+	border-left: 1px solid #d6d7db;
+	box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.5);
+
 }
-.eachMailicon1{
-  color:#d6d7db;
+
+.eachMailicon1 {
+	color: #d6d7db;
 }
-.eachMailicon2{
-  color:#d6d7db;
-  margin-left:10px;
+
+.eachMailicon2 {
+	color: #d6d7db;
+	margin-left: 10px;
 }
-.emailContent{
-  margin-left:10px;
+
+.emailContent1 {
+	margin-left: 10px;
 }
-.emailTimeSpan{
- margin-right:10px;
+
+.emailContent {
+	margin-left: 10px;
+	color: #808080;
+}
+
+.emailTimeSpan {
+	margin-right: 10px;
+	font-size: 12px;
+	color: #808080;
+}
+@media screen and (max-width:980px){
+	.eachMailDiv {
+		display: grid;
+	}
+        .emailContent1 {
+		margin-left: 30px;
+	}
+
+	.emailContent {
+		margin-left: 30px;
+		color: #808080;
+	}
+	.emailTimeSpan {
+		margin-left: 30px;
+	}
+	.eachMailicon2 {
+		display:none
+	}
+
 }
