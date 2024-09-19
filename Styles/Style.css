@@ -6,7 +6,6 @@
 }
 
 body {
-	overflow-x: hidden;
 	overflow-y: hidden;
 }
 
@@ -20,7 +19,6 @@ body {
 .gmailHeader {
 	display: flex;
 	margin-left: 1vw;
-	margin-right: 1vw;
 	margin-top: 0.2vw;
 	align-items: center;
 	justify-content: space-between;
@@ -34,12 +32,13 @@ body {
 
 .gmailLogo {
 	margin-left: 0.6vw;
+	margin-right:100%;
 }
 
 .SearchBarDiv {
 	display: flex;
-	margin-left: 10vw;
-	width: 44vw;
+	margin-left:9.6vw;
+	width: 44.2vw;
 	align-items: center;
 	justify-content: space-evenly;
 	background-color: #e6eeff;
@@ -48,11 +47,33 @@ body {
 }
 
 .searchOptionsDiv {
-	background-color: #e6eeff;
+        border-radius:20px;
+        padding:6px;
+        cursor:pointer;
+        margin:0px 5px 0px 5px;
+	background-color:#e6eeff;
+}
+.searchOption{
+	background-color:#e6eeff;
+        height:24px;	
+	width:24px;
+}
+.searchOptionsDivHid{
+	display:none;
 }
 
+.searchOptionsDiv:hover {
+	background-color:#d6d7db;
+}
+
+.searchOptionsDiv:hover>.searchOption {
+	background-color:#d6d7db;
+}
+
+
 .searchBar {
-	width: 36vw;
+        width:100%;
+	max-width: 38vw;
 	border: transparent;
 	background-color: #e6eeff;
 }
@@ -82,6 +103,7 @@ body {
 	color: #008000;
 	font-size: 28px;
 	background-color: #e6eeff;
+        border-radius:20px;
 }
 
 .activeSent {
@@ -100,6 +122,10 @@ body {
 .settingsButton {
 	margin-left: 1.6vw;
 }
+.userButton {
+	margin-left:2.2vw;
+}
+
 
 .userNavDiv {
 	display: flex;
@@ -173,7 +199,6 @@ body {
 	padding: 0.1vw 0.3vw 0.1vw 0.3vw;
 	border-radius: 14px;
 	border: 1px solid #e6eeff;
-	;
 	color: white;
 	font-size: 11px;
 	font-weight: 800;
@@ -212,9 +237,10 @@ body {
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
-	width: 8vw;
-	height: 2vw;
+	width: 110px;
+	height: 30px;
 	cursor: pointer;
+        font-weight:500;
 }
 
 .composeDiv:hover {
@@ -317,7 +343,7 @@ body {
 /* Mails Divison */
 
 .mailSectionDiv {
-	margin-left: 1.8vw;
+	margin-left: 1.2vw;
 	width: 100%;
 }
 
@@ -366,6 +392,9 @@ body {
         border-radius:20px;
 }
 
+.eachMailDiv:hover>.eachMailicon1{
+	color:grey;
+}
 .mailFlex1iconDiv:hover {
 	background-color: #d6d7db;
 	cursor: pointer;
@@ -420,11 +449,6 @@ body {
 }
 
 
-.eachmailDivision {
-	height: 80vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
 
 .eachMailDivMain {
 	width: 100%;
@@ -436,16 +460,18 @@ body {
 .eachMailDiv {
 	display: flex;
 	width: 98%;
-	justify-content: space-between;
 	padding: 12px 0px 12px 20px;
 	border-bottom: 1px solid #d6d7db;
 	cursor: pointer;
+	align-items:center;
 }
+
 
 .eachMailDiv:hover {
 	border-right: 1px solid #d6d7db;
 	border-left: 1px solid #d6d7db;
 	box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.5);
+	margin-bottom:1.5px;
 
 }
 
@@ -458,26 +484,61 @@ body {
 	margin-left: 10px;
 }
 
+.eachMailDiv:hover>.eachMailIconInnDiv>.eachMailicon1{
+	color:black;
+}
+
+.eachMailDiv:hover>.eachMailIconInnDiv>.eachMailicon2{
+	color:black;
+}
+
+.eachMailIconInnDiv {
+	width:22%;
+}
+
 .emailContent1 {
-	margin-left: 10px;
+	margin-left:10px
+
 }
 
 .emailContent {
-	margin-left: 10px;
+	margin-left:1vw;
 	color: #808080;
+        text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
 }
 
 .emailTimeSpan {
-	margin-right: 10px;
+
 	font-size: 12px;
 	color: #808080;
+	margin-left:10vw;
+	width:8%;
 }
-@media screen and (max-width:980px){
+.hiddenspan{
+	display:none;
+}
+.eachMailDiv:hover>.hiddeniHover{
+        display:unset;
+	color:black;
+        margin-left:2vw;
+}
+
+.hiddeniHover{
+        display:none;
+}
+.eachMailDiv:hover>.emailTimeSpan{
+        display:none
+}
+@media screen and (max-width:980px) {
 	.eachMailDiv {
 		display: grid;
+		width:100%;
 	}
         .emailContent1 {
 		margin-left: 30px;
+
 	}
 
 	.emailContent {
@@ -490,5 +551,61 @@ body {
 	.eachMailicon2 {
 		display:none
 	}
+	.activeListDiv {
+		width: auto;
+	}
+	.searchBarDiv {
+		width: auto;
+	}
+	.sideNavBar {
+		width: auto;
+		padding-right: auto;
+	}
+	.hiddenspan{
+		display:unset;
+	}
+	.eachMailDiv:hover>.hiddeniHover{
+       		 display:none;
+	}
+
+	.hiddeniHover{
+      		  display:none;
+	}
+	.eachMailDiv:hover>.emailTimeSpan{
+      		  display:unset
+	}
+
+	.activeSent {
+		display:none;
+	}
 
 }
+@media screen and (max-width:866px) {
+	.searchOptionsDivHid{
+		display:unset;
+	}
+	.SearchBarDiv{
+		display:none;
+	}
+	.searchOption{
+		background:none;
+	}
+	.inboxBadge {
+		display:none;
+	}
+	.emailTimeSpan{
+		width:100%;
+	}
+	.emailContent1{
+		width:90%;
+	}
+	.inboxInnerDiv {
+		max-width: 15vw;
+		width: auto;
+	}	
+}
+
+
+
+
+
