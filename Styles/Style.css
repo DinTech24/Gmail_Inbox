@@ -35,13 +35,13 @@ body {
 
 .gmailLogo {
 	margin-left: 0.6vw;
-	margin-right:100%;
+	margin-right:auto;
 }
 
 .SearchBarDiv {
 	display: flex;
-	margin-left:9.8vw;
-	width: 44.2vw;
+	margin-left:9.4vw;
+	width: 44.5vw;
 	align-items: center;
 	justify-content: space-evenly;
 	background-color: #e6eeff;
@@ -129,7 +129,7 @@ body {
 }
 
 .userButton {
-	margin-left:2.2vw;
+	margin-left:1vw;
 }
 
 
@@ -143,6 +143,7 @@ body {
 /* Main Content */
 .mainContent {
 	margin: 0px;
+	width:94%;
 }
 
 /* Side Navigation Bar */
@@ -355,7 +356,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	border-radius: 20px 20px 0px 0px;
-	padding: 5px 8px 5px 0px;
+	padding: 5px 0px 5px 0px;
 	color: #54565f;
 }
 
@@ -485,7 +486,7 @@ body {
 .eachMailicon2 {
 	color: #d6d7db;
 	margin-left: 10px;
-	margin-right:10px
+	margin-right:0.5vw
 }
 
 .eachMailDiv:hover>.eachMailIconInnDiv>.eachMailicon1{
@@ -540,25 +541,40 @@ body {
         display:none
 }
 
-@media screen and (max-width:1312px) {
-	.searchBarDiv {
-		width: auto;
+@media screen and (max-width:1244px) {
+	.SearchBarDiv {
 		margin-left:auto;
+		width:auto;
 	}
 	.sideNavBar {
 		width: auto;
 		padding-right: auto;
 	}
+
+	.eachMailDivMain {
+		margin-right:20px;
+	}
+	.eachMailDiv:hover>.hiddeniHover{
+        	display:none;
+	}
+	.eachMailDiv:hover>.emailTimeSpan{
+      		  display:unset
+	}
+	.emailTimeSpan {
+		margin-left:auto;
+	}
+	.emailContent1 {
+        	width:auto;
+	}
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1080px) {
 	.eachMailDiv {
 		display: grid;
 		width:auto;
 	}
         .emailContent1 {
-		margin-left: 30px;
-
+		margin-left:16px;
 	}
 
 	.emailContent {
@@ -599,6 +615,10 @@ body {
 	}
 	.emailTimeSpan {
 		margin-left:30px;
+		width:100%;
+	}
+	.eachMailIconInnDiv{
+		width:100%;
 	}	
 
 }
@@ -639,7 +659,7 @@ body {
 		width:auto;
 	}	
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:706px) {
 	.screenDivsion{
 		display:none;
 	}
@@ -733,6 +753,7 @@ body {
 	}
 	.mobileMailInnerDiv{
 		margin-left:10px;
+		width:100%;
 	}
 	.mobileMailInnerDiv1{
 		display:flex;
