@@ -1,0 +1,787 @@
+* {
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	background-color: #F4F7FB;
+	margin: 0px;
+	font-size: 14px;
+}
+.mobileViewDivision{
+        display:none;
+}
+
+body {
+	overflow-y: hidden;
+}
+
+.screenDivsion {
+	display: flex;
+
+}
+
+/* Header Navigation Bar */
+
+.gmailHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top:5px;
+}
+
+.toggleLogo {
+        margin-left:14px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gmailLogo {
+	margin-left: 0.6vw;
+	margin-right:auto;
+}
+
+.SearchBarDiv {
+	display: flex;
+	margin-left:9.4vw;
+	width: 44.5vw;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #e6eeff;
+	height: 50px;
+	border-radius: 30px;
+}
+
+.searchOptionsDiv {
+        border-radius:20px;
+        padding:6px;
+        cursor:pointer;
+        margin:0px 5px 0px 5px;
+	background-color:#e6eeff;
+}
+.searchOption{
+	background-color:#e6eeff;
+        height:24px;	
+	width:24px;
+}
+.searchOptionsDivHid{
+	display:none;
+}
+
+.searchOptionsDiv:hover {
+	background-color:#d6d7db;
+}
+
+.searchOptionsDiv:hover>.searchOption {
+	background-color:#d6d7db;
+}
+
+
+.searchBar {
+        width:100%;
+	max-width: 38vw;
+	border: transparent;
+	background-color: #e6eeff;
+}
+
+.searchBar:focus {
+	outline: none;
+}
+
+.activeInfoSettings {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 2vw;
+}
+
+.activeListDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #e6eeff;
+	height: 45px;
+	border-radius: 20px;
+	width: 7vw;
+}
+
+.greenRound {
+	color: #008000;
+	font-size: 28px;
+	background-color: #e6eeff;
+        border-radius:20px;
+}
+
+.activeSent {
+	background-color: #e6eeff;
+	text-shadow: 1px black;
+}
+
+.infoButton {
+	margin-left: 1.7vw;
+}
+
+.contentsButton {
+	margin-left: 1.7vw;
+
+}
+
+.settingsButton {
+	margin-left: 1.6vw;
+
+}
+
+.userButton {
+	margin-left:1vw;
+}
+
+
+.userNavDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+/* Main Content */
+.mainContent {
+	margin: 0px;
+	width:94%;
+}
+
+/* Side Navigation Bar */
+
+.toggleButtonDiv {
+	background-color: #e6eeff;
+	margin: 25px 10px 0px 10px;
+	paddding: 12px;
+}
+
+.toggleButton {
+	background-color: #ecf0f8;
+	margin-left: 14px;
+}
+
+.sideNavBar {
+	height: 100vh;
+	width: 55px;
+	background-color: #ecf0f8;
+	padding-right: 14px;
+}
+
+.sideNavComponent1 {
+	background-color: #ecf0f8;
+	cursor: pointer;
+	margin-top: 35px;
+	margin-left: 14px;
+}
+
+.sideNavComponent2 {
+	background-color: #ecf0f8;
+	cursor: pointer;
+	margin-top: 26px;
+	margin-left: 14px;
+}
+
+.sideNavComponent3 {
+	background-color: #ecf0f8;
+	cursor: pointer;
+	margin-top: 30px;
+	margin-left: 14px;
+}
+
+.sideNavInnDiv1 {
+	background-color: #ccdcff;
+	padding: 10px 16px 10px 16px;
+	border-radius: 30px;
+	position: absolute;
+
+}
+
+.emailEnvolopeIcon {
+	background-color: #ccdcff;
+}
+
+.mailIndicator {
+	background-color: #990000;
+	position: relative;
+	margin-left: 25px;
+	padding: 0.1vw 0.3vw 0.1vw 0.3vw;
+	border-radius: 14px;
+	border: 1px solid #e6eeff;
+	color: white;
+	font-size: 11px;
+	font-weight: 800;
+}
+
+.sideNavInnDiv2 {
+	background-color: #ecf0f8;
+	margin-left: 10px;
+}
+
+.sideNavCompName {
+	background-color: #ecf0f8;
+	font-size: 12px;
+	margin-left: 8px;
+	color: #54565f;
+}
+
+.sideNavCompName1 {
+	background-color: #e6eeff;
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 14px;
+	color: #54565f;
+}
+
+/* Catagories Divison */
+
+.catagoriesDiv {
+	margin-left: 1vw;
+	margin-top: 10px;
+}
+
+.composeDiv {
+	padding: 1vw 1vw 1vw 1vw;
+	background-color: #b3e6ff;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	width: 110px;
+	height: 30px;
+	cursor: pointer;
+        font-weight:500;
+}
+
+.composeDiv:hover {
+	box-shadow: 2px 2px 2px grey;
+}
+
+.penIcon {
+	background-color: #b3e6ff;
+	margin-top: 6px;
+	font-size: 20px;
+}
+
+.composeSpan {
+	background-color: #b3e6ff;
+	margin-top: 8px;
+	margin-right: 6px;
+	color: #001D35;
+	text-shadow: 1px #001D35;
+}
+
+.inboxInnerDiv {
+	background-color: #ccdcff;
+	padding: 8px 10px 8px 16px;
+	width: 200px;
+	margin-top: 15px;
+	border-radius: 20px;
+	cursor: pointer;
+        display:flex;
+}
+
+.catagoriesInnerDiv {
+	padding: 8px 10px 8px 16px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.catagoriesInnerDiv:hover {
+	background-color: #e6e6e6;
+	border-radius: 20px;
+}
+
+.catagoriesInnerDiv:hover>.catagoriesSpan {
+	background-color: #e6e6e6;
+}
+
+.inboxIcon {
+	color: black;
+	background-color: #ccdcff;
+}
+
+.componentsIcon {
+	color: black;
+}
+
+.inboxSpan {
+	background-color: #ccdcff;
+	margin-left: 20px;
+	font-weight: 600;
+}
+
+.inboxBadge {
+	background-color: #ccdcff;
+	margin-left: auto;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.catagoriesSpan {
+	margin-left: 15px;
+	color: #54565f;
+}
+
+.labelSpan {
+	margin-left: 10px;
+	margin-top: 25px;
+	color: #54565f;
+
+}
+
+.labelDiv {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.labelIcon {
+	color: black;
+	margin-top: 25px;
+}
+
+
+.mailsectionMainDiv {
+	display: flex;
+}
+
+/* Mails Divison */
+
+.mailSectionDiv {
+	margin-left: 1.2vw;
+	width: 100%;
+}
+
+.mailSectionHeader {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 20px 20px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	color: #54565f;
+}
+
+.mailHeaderDropdown{
+	background-color: white;
+}
+
+.mailSectionFlex1 {
+	background-color: white;
+	display: flex;
+}
+
+.mailSectionFlex2 {
+	background-color: white;
+	display: flex;
+}
+
+.mailFlex1iconDiv {
+	background-color: white;
+	padding: 10px 5px 10px 5px;
+        border-radius:6px;
+        margin-left:15px;
+}
+
+.mailFlex1icon2Div {
+	background-color: white;
+	margin-left: 2px;
+	padding: 10px 2px 10px 2px;
+        border-radius:2px;
+}
+
+.mailFlex1icon {
+	background-color: white;
+	margin-left: 1vw;
+        padding:10px;
+        border-radius:20px;
+}
+
+.eachMailDiv:hover>.eachMailicon1{
+	color:grey;
+}
+.mailFlex1iconDiv:hover {
+	background-color: #d6d7db;
+	cursor: pointer;
+	transition-duration:1s;
+}
+
+.mailFlex1icon2Div:hover {
+	background-color: #d6d7db;
+	cursor: pointer;
+	transition-duration:1s;
+}
+
+.mailFlex1icon:hover {
+	background-color: #d6d7db;
+	cursor: pointer;
+	transition-duration:700ms;
+       
+}
+
+.mailTotNumber {
+	margin-right: 35px;
+	background-color: white;
+	font-size: 12px;
+        padding:10px 10px 10px 10px;
+        border-radius:6px;
+}
+.mailTotNumber:hover {
+	background-color: #d6d7db;
+	cursor:pointer;
+}
+
+.mailFlex2icon {
+	margin-right: 15px;
+}
+
+.mailFlex2Div1 {
+	margin-right: 20px;
+	background-color: white;
+        margin-top:10px;
+}
+
+.mailFlex2Div2 {
+	background-color: white;
+	margin-right: 40px;
+        padding:10px ;
+}
+
+.mailFlex2Div2:hover {
+	background-color: #d6d7db;
+        border-radius:8px;
+	transition-duration:700ms;
+}
+
+
+
+.eachMailDivMain {
+	width: 100%;
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.eachMailDiv {
+	display: flex;
+	width: 98%;
+	padding: 12px 0px 12px 20px;
+	border-bottom: 1px solid #d6d7db;
+	cursor: pointer;
+	align-items:center;
+	margin-bottom:1px;
+}
+
+
+.eachMailDiv:hover {
+	border-right: 1px solid #d6d7db;
+	border-left: 1px solid #d6d7db;
+	box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.5);
+	margin-bottom:1px;
+
+}
+
+.eachMailicon1 {
+	color: #d6d7db;
+}
+
+.eachMailicon2 {
+	color: #d6d7db;
+	margin-left: 10px;
+	margin-right:0.5vw
+}
+
+.eachMailDiv:hover>.eachMailIconInnDiv>.eachMailicon1{
+	color:black;
+}
+
+.eachMailDiv:hover>.eachMailIconInnDiv>.eachMailicon2{
+	color:black;
+}
+
+.eachMailIconInnDiv {
+	width:22%;
+}
+
+.emailContent1 {
+        text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+
+}
+
+.emailContent {
+	margin-left:1vw;
+	color: #808080;
+        text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.emailTimeSpan {
+	font-size: 12px;
+	color: #808080;
+	margin-left:10vw;
+	width:8%;
+}
+.hiddenspan{
+	display:none;
+}
+.eachMailDiv:hover>.hiddeniHover{
+        display:unset;
+	color:black;
+        margin-left:2vw;
+}
+
+.hiddeniHover{
+        display:none;
+}
+.hiddeniHoverClock{
+        display:none;
+}
+.eachMailDiv:hover>.emailTimeSpan{
+        display:none
+}
+
+@media screen and (max-width:1244px) {
+	.SearchBarDiv {
+		margin-left:auto;
+		width:auto;
+	}
+	.sideNavBar {
+		width: auto;
+		padding-right: auto;
+	}
+
+	.eachMailDivMain {
+		margin-right:20px;
+	}
+	.eachMailDiv:hover>.hiddeniHover{
+        	display:none;
+	}
+	.eachMailDiv:hover>.emailTimeSpan{
+      		  display:unset
+	}
+	.emailTimeSpan {
+		margin-left:auto;
+	}
+	.emailContent1 {
+        	width:auto;
+	}
+}
+
+@media screen and (max-width:1080px) {
+	.eachMailDiv {
+		display: grid;
+		width:auto;
+	}
+        .emailContent1 {
+		margin-left:16px;
+	}
+
+	.emailContent {
+		margin-left: 30px;
+		color: #808080;
+	}
+	.eachMailicon2 {
+		display:none
+	}
+	.activeListDiv {
+		width: auto;
+		padding:0px 10px 0px 10px;
+	}
+	.searchBarDiv {
+		width: auto;
+		margin-left:auto;
+	}
+	.sideNavBar {
+		width: auto;
+		padding-right: auto;
+	}
+	.hiddenspan{
+		display:unset;
+	}
+	.eachMailDiv:hover>.hiddeniHover{
+       		 display:none;
+	}
+
+	.hiddeniHover{
+      		  display:none;
+	}
+	.eachMailDiv:hover>.emailTimeSpan{
+      		  display:unset
+	}
+
+	.activeSent {
+		display:none;
+	}
+	.emailTimeSpan {
+		margin-left:30px;
+		width:100%;
+	}
+	.eachMailIconInnDiv{
+		width:100%;
+	}	
+
+}
+@media screen and (max-width:866px) {
+	.searchOptionsDivHid{
+		display:unset;
+		margin-right:0px;
+		border-radius:20px;
+        	padding:6px;
+        	cursor:pointer;
+        	margin:0px 5px 0px 5px;
+	}
+	.searchOptionsDivHid:hover{
+		background-color:#d6d7db;	
+	}
+	.SearchBarDiv{
+		display:none;
+	}
+	.searchOption{
+		background:none;
+	}
+	.emailTimeSpan{
+		width:100%;
+	}
+	.emailContent1{
+		width:90%;
+		margin-left:16px;
+		
+	}
+	.hiddeniHoverClock{
+      		display:unset;
+		margin-left:87%;  
+	}
+	.eachMailDiv {
+		width: auto;
+	}
+	.eachMailIconInnDiv {
+		width:auto;
+	}	
+}
+@media screen and (max-width:706px) {
+	.screenDivsion{
+		display:none;
+	}
+        .mobileViewDivision{
+		display:unset;
+	}
+	.messageOnTop{
+		display:flex;
+		justify-content:space-evenly;
+		margin-top:10px;
+	}
+	.mailHeaderLogo{
+		padding:10px;
+		border-radius:5px;
+		background-color:white;
+	}
+	.convertToMobileBold{
+		font-weight:600;
+	}
+	.mobileOpen{
+		cursor:pointer;
+		font-weight:500;
+		color:#0066ff;
+		font-size:18px;
+		margin-top:10px;
+	}
+	.mobileHeader{
+		display:flex;
+		justify-content:space-between;
+		padding:20px 10px 20px 10px;
+		background-color:#d9d9d9;
+		margin-top:20px;
+		margin-bottom:20px;
+		align-items:center;
+		border-bottom:1px solid #cccccc;
+		border-top:1px solid #cccccc;
+		background-color:#d9d9d9;
+	}
+	.mobileHeadersymbs{
+		background-color:#d9d9d9;
+	}
+	.mobileToggle{
+		background-color:#d9d9d9;
+		cursor:pointer;
+	}
+	.mobileRotate{
+		background-color:#d9d9d9;
+		margin-left:30px;
+		cursor:pointer;
+	}
+	.mobilePen{
+		background-color:#d9d9d9;
+		padding:15px 12px 15px 12px;
+		background-color:crimson;
+		border-radius:5px;
+		color:white;
+		cursor:pointer;
+	}
+	.mobileheaderPrimary{
+		background-color:#d9d9d9;
+		font-size:22px;
+	}
+	.mobileheaderPrimarySpan{
+		background-color:#d9d9d9;
+		font-size:16px;
+	}
+	.mobileSearchDiv{
+		margin-bottom:10px;
+		padding-bottom:10px;
+		border-bottom:2px solid #cccccc;
+	}
+	.mobileSearchbar{
+		border:transparent;
+		width:85%;
+	}
+	.mobileSearchbar:focus{
+		outline:none;
+	}
+	.mobileLens{
+		margin-right:10px;
+		margin-left:5px;
+	}
+	.mobileEachMailDiv{
+		display:flex;
+		align-items:center;
+		padding-left:5px;
+		padding-bottom:10px;
+		border-bottom:2px solid #cccccc;
+		cursor:pointer;
+		box-shadow: 2px 2px 5px 0px rgb(0, 0, 0, 0.5);
+	}
+	.mobileMailInnerDiv{
+		margin-left:10px;
+		width:100%;
+	}
+	.mobileMailInnerDiv1{
+		display:flex;
+		justify-content:space-between;
+	}
+	.mobileMailInnerDiv2{
+		margin-top:8px;
+		color:#999999;
+	}
+	.mobilemailHeading{
+		font-size:16px;
+	}
+	.mailInnerDivStar{
+		color:#999999;
+	}
+	.mailSquareicon{
+		color:#999999;
+	}
+	.mobileEmailTime{
+		font-size:12px;
+	}
+	.mobileMailDiv{
+		overflow-y:scroll;
+		height:85vh;
+	}	
+}
+
+
+
+
+
